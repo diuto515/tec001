@@ -1,0 +1,6 @@
+length = float(input("Enter the length: "))
+width = float(input("Enter the width: "))
+perimeter = 2 * (length + width)
+area = length * width
+print(f"Perimeter: {perimeter}")
+print(f"Area: {area}")
