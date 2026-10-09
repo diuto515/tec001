@@ -1,6 +1,6 @@
-num1 = int(input("Enter first integer: "))
-num2 = int(input("Enter second integer: "))
-num3 = int(input("Enter third integer: "))
+num1 = int(input("1:"))
+num2 = int(input("2:"))
+num3 = int(input("3"))
 total_sum = num1 + num2 + num3
 product = num1 * num2 * num3
 average = total_sum / 3
