@@ -1,8 +1,12 @@
-city_names=[]
-                        
-for i in range(5):                 
-    city = input("Enter a city name: ")
-    city_names.append(city)            
+numbers = []
+while True:
+    text = input("Enter a number (empty to quit): ")
+    if text == "":
+        break
+    numbers.append(float(text))
 
-for city in city_names:                
-    print(city)
+numbers.sort(reverse=True)
+print("5 greatest numbers:", numbers[:5])
+
+
+numbers=[]

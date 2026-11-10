@@ -1,12 +1,11 @@
-def sort_list(numbers):
-    nums = numbers.copy()             
-    n = len(nums)
-    for i in range(n - 1):
-        for j in range(n - 1 - i):
-            if nums[j] > nums[j + 1]:  
-                nums[j], nums[j + 1] = nums[j + 1], nums[j]   
-    
+n= int(input('Enter numbers: '))
+prime_number=n>1
+for i in range(2,(n ** 0.5) + 1):
+    if n % i == 0:
+        prime_number = False
+        break 
+if prime_number:
+    print(f"{n} is a prime number.")
+else:
+    print(f"{n} is not a prime number.")
 
-my_list = [5, 2, 9, 1, 7]
-my_list = [5, 8, 6, 2, 0]
-print(sort_list(my_list))  
